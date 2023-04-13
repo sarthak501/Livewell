@@ -11,14 +11,15 @@
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
-    background-color: #ffffff;
+    background-color:#dcd8d8;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    color:#9bbddf
   }
   
   .logo {
     font-size: 2rem;
     font-weight: bold;
-    color: #000;
+  
     text-decoration: none;
   }
   
@@ -32,7 +33,7 @@
   }
   
   nav a {
-    color: #000;
+
     text-decoration: none;
   }
   
@@ -75,7 +76,7 @@
   }
   
   button:hover {
-    background-color: #34495e;
+    background-color: #92beeb;
   }
   
   /* Set the video element to be centered */
