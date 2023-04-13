@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Style the header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav li:not(:last-child) {
+    margin-right: 2rem;
+  }
+  
+  nav a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: #666;
+  }
+  
+  /* Style the container */
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 7rem);
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    padding: 2rem;
+  }
+  
+  .buttons {
+    margin-bottom: 2rem;
+  }
+  
+  button {
+    font-size: 1.2rem;
+    background-color: #2c3e50;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #34495e;
+  }
+  
+  /* Set the video element to be centered */
+  video#webcam {
+    display: block;
+    margin: 0 auto;
+  
+    /* Increase the size of the video */
+    width: 110%;
+    height:450px;
+  
+    /* Add a border to the video */
+    border: 2px solid #2c3e50;
+    border-radius: 5px;
+  }
+  
+  .messages {
+    text-align: center;
+  }
+  
+  .messages h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  .messages h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .messages ul {
+    list-style: circle;
+    margin-top: 2rem;
+    text-align: left;
+  }
+  
+  .messages li {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 2rem;
+  }
+  
+  .footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-column {
+    flex: 1 1 30rem;
+    margin-right: 2rem;
+  }
+  
+  .footer-column:last-child {
+    margin-right: 0;
+  }
+  
+  .footer-column h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-column p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-column ul {
+    list-style: none
+  }
