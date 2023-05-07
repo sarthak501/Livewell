@@ -1,72 +1,122 @@
-<html>
 
-<head>
-    <!-- Load the latest version of TensorFlow.js -->
-    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
-    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
-    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Livewell powered with ai</title>
+h1{
+  color:rgb(244, 171, 183);
+  text-align: center;
+  font-weight: bold;
+}
+ .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(90vh - 7rem);
+} 
 
-    <style>
-        /* Define the styles for the Start Now button */
-        .start-now-button {
-            display: inline-block;
-            background-color: orange;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 26px;
-            font-weight: bold;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 60px;
-            margin-left: 150px;
-           
-        }
-        .start-now-button:hover{
-      font-size:36px;
-      color:white;
-      background-color: pink;
-        }
-        /* Define the styles for the parent container */
-        .slogan-container {
-            display: flex;
-            flex-direction: column;
-            align-items: left;
-        }
-    </style>
-</head>
+.container {
+  display: flex;
+  flex-direction: row; /* change direction to row */
+  align-items: center;
+  background-color: #f5f5f5;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
 
-<body>
-    <div class="buttons">
-        <button id="class-a">Right Posture</button>
-        <button id="class-b">Wrong Posture</button>
-    </div>
-    <img class="logo" src="logo.jpeg" alt="logo">
-    <div class="center">
-        <!-- Wrap the slogan and the button inside a parent container -->
-        <div class="slogan-container">
-            <div class="slogan"><pre>
-            Better,
+.video-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: -2rem; /* add margin to separate from slogan */
+  border-color: #d68616;
+  
+}
 
-            Posture
+/* Set the video element to be centered */
+video#webcam {
+  display: block;
+  margin: 0 auto;
 
-            happy you.</pre>
-            <button class="start-now-button">Start Now</button></div>
-            
-        </div>
-        <div class="video-wrapper">
-            <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
-        </div>
-    
-    </div>
-    <h1>LiveWell- an Ai Powerd Tool</h1>
-    <script src="index.js"></script>
-</body>
+  /* Increase the size of the video */
+  width: 110%;
+  height:450px;
+  margin-left: -4rem; 
+  /* Add a border to the video */
+  border: 2px solid #b64e1a;
+  border-radius: 5px;
+}
 
-</html>
+.slogan {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  
+  padding: 1rem;
+  
+  margin-right: 8rem; /* add margin to separate from video */
+  margin-left: -25rem; /* add negative margin to move slogan to the left */
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  /* background-image:url('black.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%; */
+  background-color:rgb(20, 19, 19);
+}
+
+
+.logo {
+  position: absolute;
+  top: 3rem;
+  right: 4rem;
+  height: 8rem;
+  
+  
+}
+
+
+
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.buttons button {
+  margin: 10 10px;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  background-color: #d68616;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: pink;
+  color:white;
+  font-size: 24px;
+}
+
+
+video#webcam {
+  display: block;
+  margin: 0 auto;
+
+
+  width: 110%;
+  height:450px;
+
+ 
+   border: 10px solid #d56910;
+  border-radius: 30px;
+}
