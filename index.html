@@ -9,46 +9,63 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Livewell powered with ai</title>
+
+    <style>
+        /* Define the styles for the Start Now button */
+        .start-now-button {
+            display: inline-block;
+            background-color: orange;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 26px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 60px;
+            margin-left: 150px;
+           
+        }
+        .start-now-button:hover{
+      font-size:36px;
+      color:white;
+      background-color: pink;
+        }
+        /* Define the styles for the parent container */
+        .slogan-container {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <nav>
-          <a href="#" class="logo">LiveWell Powered with ai</a>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-     
-    
-      
-    <div class="center">
-        <div class="container">
-            <div class="buttons">
-                <button id="class-a">Right Posture</button>
-                <button id="class-b">Wrong Posture</button>
-            </div>
-            
-        <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
-        </div>
-        <!-- <div class="messages">
-            <h2> Welcome to the Upright Helper. </h2>
-            <br>
-            <h3>To have a proper posture, you need to stay upright while sitting. This website is designed to help you achieve this by warning you whenever you are not sitting upright.</h3>
-            <br>
-            <h3>To use this site effectively, all you have to do is:</h3>
-            <ul>
-               
-            </ul>
-            <br>
-            <p> Note that, this website does not send any data to the web. Everything happens locally, which means YOUR data stays at YOUR machine. Whenever you refresh the page, all the captured data vanishes.</p>
-        </div> -->
-        
+    <div class="buttons">
+        <button id="class-a">Right Posture</button>
+        <button id="class-b">Wrong Posture</button>
     </div>
+    <img class="logo" src="logo.jpeg" alt="logo">
+    <div class="center">
+        <!-- Wrap the slogan and the button inside a parent container -->
+        <div class="slogan-container">
+            <div class="slogan"><pre>
+            Better,
+
+            Posture
+
+            happy you.</pre>
+            <button class="start-now-button">Start Now</button></div>
+            
+        </div>
+        <div class="video-wrapper">
+            <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+        </div>
     
+    </div>
+    <h1>LiveWell- an Ai Powerd Tool</h1>
     <script src="index.js"></script>
 </body>
 
